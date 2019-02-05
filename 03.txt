@@ -1,0 +1,10 @@
+let beginning = "Жили у бабуси два веселых гуся"
+let $end = "...один серый другой белый – два веселых гуся"
+
+let text = beginning
+
+if (text === beginning) {
+  alert($end)
+} else {
+  alert(beginning)
+}

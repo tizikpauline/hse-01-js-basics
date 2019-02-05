@@ -1,0 +1,9 @@
+let discountCode = 985
+let simpsonsBestEpisode = "Broken Secret"
+let coffeePrice = 149.99
+
+if (coffeePrice <= 250) {
+  alert("Беру!")
+} else {
+  alert("Вот купон на скидку: " + discountCode)
+}

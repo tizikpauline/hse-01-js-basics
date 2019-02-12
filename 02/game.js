@@ -23,6 +23,11 @@ while (isSunk === false) {
   // Нужно увеличить счетчик всех выстрелов
   shots += 1
   // Сравнить координаты выстрела с координатами корабля
+  if (currentShot < 5 || currentShot > 7 ) {
+    alert("Вы промахнулись!")
+  } else if (currentShot >= 5 || currentShot <= 8){
+    alert("Вы попали!")
+  }
   if (currentShot === location1 || currentShot === location2 || currentShot === location3) {
     // Если игрок попал, то увеличиваем счетчик попаданий на 1
     hits += 1
@@ -36,11 +41,6 @@ while (isSunk === false) {
     alert("Введенное вами число меньше 0, введите другое число от 0 до 9!")
   } else if (currentShot > 9) {
     alert("Введенное вами число больше 9, введите другое число от 0 до 9!")
-  }
-  if (currentShot < 5 || currentShot > 7 ) {
-    alert("Вы промахнулись!")
-  } else if (currentShot >= 5 || currentShot <= 8){
-    alert("Вы попали!")
   }
 }
 // Выводим статистику игры и рейтинг игрока
